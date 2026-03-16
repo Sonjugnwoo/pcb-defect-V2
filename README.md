@@ -25,7 +25,7 @@ PCB 불량 검출 시스템 v2.0
  → DrawMat() → temple_%04d.jpg + test_%04d.jpg 저장  
 
 전처리 효과 
- Grayscale: 색상 변화 무시
+ Grayscale: 색상 변화 무시  
  CLAHE: 조명 불균일 보정  
  Morphology: 노이즈 제거   
  YOLOv3: 95%+ mAP  (DeepPCB 데이터셋)  

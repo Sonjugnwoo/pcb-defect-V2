@@ -1,7 +1,7 @@
-PCB 불량 검출 시스템 v2.0
+PCB 불량 검출 시스템 v2.0  
  OpenCV + MFC + YOLOv2 기반 배치 처리 프로토타입  
 
-기능 개요
+기능 개요  
  이미지 로드: 폴더 단위 template/test 이미지 쌍 배치 로드  
  전처리: Grayscale → Gaussian Blur → CLAHE → Morphology Opening  
  YOLOv2 검출: DeepPCB 훈련된 결함 검출 + 바운딩 박스 그리기  
@@ -9,7 +9,7 @@ PCB 불량 검출 시스템 v2.0
  결과 저장: temple_%04d.jpg + test_%04d.jpg 쌍 저장  
  UI: 실시간 Picture Control 갱신 + 상태바 진행 표시  
 
-기술 스택
+기술 스택  
  Frontend: MFC Dialog + Picture Control  
  Backend: OpenCV 4.x + YOLOv3 (darknet)  
  전처리: CLAHE(1.5,8x8), Morphological Opening(3x3 Ellipse)  
@@ -17,9 +17,9 @@ PCB 불량 검출 시스템 v2.0
  빌드: Visual Studio 2019 + vcpkg  
  GPU: CUDA 지원 (RTX 2060s)  
 
-성능
+성능  
 결함 검출 파이프라인:  
- absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox
+ absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox  
 배치 처리 파이프라인:  
  imgLoad() → ImagePreprocessor.all() → match.matchTemple() 
  → DrawMat() → temple_%04d.jpg + test_%04d.jpg 저장  
@@ -28,7 +28,7 @@ PCB 불량 검출 시스템 v2.0
  Grayscale: 색상 변화 무시
  CLAHE: 조명 불균일 보정  
  Morphology: 노이즈 제거   
- YOLOv3: 95%+ mAP  (DeepPCB 데이터셋)
+ YOLOv3: 95%+ mAP  (DeepPCB 데이터셋)  
 
 현재 한계점  
  원본 이미지 전량 저장 (메모리 낭비)  

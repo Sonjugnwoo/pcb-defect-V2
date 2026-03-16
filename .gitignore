@@ -1,0 +1,14 @@
+.vs/ 
+*.pch 
+*.ipch 
+x64/ 
+bin/ 
+obj/ 
+*.exe 
+*.weights
+*.jpg
+*.pdb
+
+App/   
+*.dll 
+yolo_cpp_dll.* 

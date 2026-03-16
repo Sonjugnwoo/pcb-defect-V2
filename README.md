@@ -45,3 +45,5 @@ PCB 불량 검출 시스템 v2.0
 ![Image](https://github.com/user-attachments/assets/227a61af-694f-4edb-912f-44b8b8d3c995)
 
 ![Image](https://github.com/user-attachments/assets/eec8897f-5b0c-4785-9d18-9a0669198694)
+
+![Image](https://github.com/user-attachments/assets/c2821200-dfc1-457c-a9e8-e22355ce3fea) 

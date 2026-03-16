@@ -18,7 +18,7 @@ PCB 불량 검출 시스템 v2.0
  GPU: CUDA 지원 (RTX 2060s)  
 
 성능
-결함 검출 파이프라인:
+결함 검출 파이프라인:  
  absdiff → GRAY → Threshold(30) → Open(5x5) → Contours → BoundingBox
 배치 처리 파이프라인:  
  imgLoad() → ImagePreprocessor.all() → match.matchTemple() 
@@ -30,13 +30,13 @@ PCB 불량 검출 시스템 v2.0
  Morphology: 노이즈 제거   
  YOLOv3: 95%+ mAP  (DeepPCB 데이터셋)
 
-현재 한계점
+현재 한계점  
  원본 이미지 전량 저장 (메모리 낭비)  
  template/test 비교 방식 (YOLO 단독보다 느림)  
  불량만 필터링 없음 (99% OK 이미지 낭비)  
  매직넘버: 하드코딩된 YOLO confidence threshold  
  
-개발 로드맵
+개발 로드맵  
  v1.0 - 템플릿 매칭 프로토타입  ✅
  v2.0 - YOLOv3 배치 처리       ✅ 
  v3.0 - 불량만 추출

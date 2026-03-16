@@ -4,7 +4,7 @@ PCB 불량 검출 시스템 v2.0
 기능 개요  
  이미지 로드: 폴더 단위 template/test 이미지 쌍 배치 로드  
  전처리: Grayscale → Gaussian Blur → CLAHE → Morphology Opening  
- YOLOv2 검출: DeepPCB 훈련된 결함 검출 + 바운딩 박스 그리기  
+ YOLOv3 검출: DeepPCB 훈련된 결함 검출 + 바운딩 박스 그리기  
  배치 처리: 리스트박스 순차 자동 처리 (짝수:template, 홀수:test)  
  결과 저장: temple_%04d.jpg + test_%04d.jpg 쌍 저장  
  UI: 실시간 Picture Control 갱신 + 상태바 진행 표시  
@@ -41,3 +41,7 @@ PCB 불량 검출 시스템 v2.0
  v2.0 - YOLOv3 배치 처리       ✅  
  v3.0 - 불량만 추출  
  v4.0 - 실시간 카메라 스트림      
+
+![Image](https://github.com/user-attachments/assets/227a61af-694f-4edb-912f-44b8b8d3c995)
+
+![Image](https://github.com/user-attachments/assets/eec8897f-5b0c-4785-9d18-9a0669198694)
